@@ -88,5 +88,5 @@ elif page == "Batch Profiling":
             st.success(f"Batch predictions saved to {output_file_path}")
             logging.info(f"Batch predictions saved to {output_file_path}")
         else:
-            st.error("Error came during batch prediction.")
+            st.error("Error during batch prediction.")
             logging.error(f"Batch prediction failed with status code {response.status_code}")
