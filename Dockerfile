@@ -15,10 +15,10 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Make port 8501 available to the world outside this container
-EXPOSE 8501
+EXPOSE 8503
 
 # Define environment variable
-ENV NAME World
+ENV NAME MSRIT_MLOps
 
 # Run streamlit when the container launches
 CMD ["streamlit", "run", "scripts/app.py"]
